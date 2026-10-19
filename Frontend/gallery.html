@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CBIR - Dataset Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 font-sans">
+    <div class="flex h-screen">
+        <aside class="w-64 bg-slate-900 text-white p-6 flex flex-col justify-between">
+            <div>
+                <h1 class="text-2xl font-bold mb-8 text-indigo-400">🖼️ CBIR System</h1>
+                <nav class="space-y-3">
+                    <a href="index.html" class="block py-2.5 px-4 rounded hover:bg-slate-800 text-gray-300">Image
+                        Retrieval</a>
+                    <a href="compare.html" class="block py-2.5 px-4 rounded hover:bg-slate-800 text-gray-300">Compare
+                        Methods</a>
+                    <a href="evaluation.html"
+                        class="block py-2.5 px-4 rounded hover:bg-slate-800 text-gray-300">Evaluation Dashboard</a>
+                    <a href="gallery.html"
+                        class="block py-2.5 px-4 rounded bg-indigo-600 text-white font-medium">Dataset Gallery</a>
+                </nav>
+            </div>
+        </aside>
+        <main class="flex-1 p-8 overflow-y-auto">
+            <header class="mb-8">
+                <h2 class="text-3xl font-bold text-gray-800">Dataset Gallery (Corel-1K)</h2>
+                <p class="text-gray-500">Khám phá kho ảnh mẫu phục vụ trích xuất đặc trưng và truy xuất[cite: 30]</p>
+            </header>
+            <div id="galleryGrid" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <p class="text-gray-400 col-span-full text-center py-12">Đang tải danh sách ảnh từ server...</p>
+            </div>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

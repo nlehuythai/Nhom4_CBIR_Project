@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CBIR - Compare Methods</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 font-sans">
+    <div class="flex h-screen">
+        <aside class="w-64 bg-slate-900 text-white p-6 flex flex-col justify-between">
+            <div>
+                <h1 class="text-2xl font-bold mb-8 text-indigo-400">🖼️ CBIR System</h1>
+                <nav class="space-y-3">
+                    <a href="index.html" class="block py-2.5 px-4 rounded hover:bg-slate-800 text-gray-300">Image
+                        Retrieval</a>
+                    <a href="compare.html"
+                        class="block py-2.5 px-4 rounded bg-indigo-600 text-white font-medium">Compare Methods</a>
+                    <a href="evaluation.html"
+                        class="block py-2.5 px-4 rounded hover:bg-slate-800 text-gray-300">Evaluation Dashboard</a>
+                    <a href="gallery.html" class="block py-2.5 px-4 rounded hover:bg-slate-800 text-gray-300">Dataset
+                        Gallery</a>
+                </nav>
+            </div>
+        </aside>
+        <main class="flex-1 p-8 overflow-y-auto">
+            <header class="mb-8">
+                <h2 class="text-3xl font-bold text-gray-800">Compare Methods</h2>
+                <p class="text-gray-500">So sánh kết quả truy xuất song song giữa Color Histogram, Color Moments và LBP
+                </p>
+            </header>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-xl shadow-sm border">
+                    <h3 class="font-bold text-indigo-600 mb-3">Color Histogram</h3>
+                    <div class="space-y-3" id="compHist">
+                        <p class="text-xs text-gray-400">Đang chờ thực thi so sánh...</p>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border">
+                    <h3 class="font-bold text-indigo-600 mb-3">Color Moments</h3>
+                    <div class="space-y-3" id="compMoments">
+                        <p class="text-xs text-gray-400">Đang chờ thực thi so sánh...</p>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border">
+                    <h3 class="font-bold text-indigo-600 mb-3">Local Binary Pattern (LBP)</h3>
+                    <div class="space-y-3" id="compLbp">
+                        <p class="text-xs text-gray-400">Đang chờ thực thi so sánh...</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

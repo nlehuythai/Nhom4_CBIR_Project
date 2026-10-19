@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CBIR - Evaluation Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 font-sans">
+    <div class="flex h-screen">
+        <aside class="w-64 bg-slate-900 text-white p-6 flex flex-col justify-between">
+            <div>
+                <h1 class="text-2xl font-bold mb-8 text-indigo-400">🖼️ CBIR System</h1>
+                <nav class="space-y-3">
+                    <a href="index.html" class="block py-2.5 px-4 rounded hover:bg-slate-800 text-gray-300">Image
+                        Retrieval</a>
+                    <a href="compare.html" class="block py-2.5 px-4 rounded hover:bg-slate-800 text-gray-300">Compare
+                        Methods</a>
+                    <a href="evaluation.html"
+                        class="block py-2.5 px-4 rounded bg-indigo-600 text-white font-medium">Evaluation Dashboard</a>
+                    <a href="gallery.html" class="block py-2.5 px-4 rounded hover:bg-slate-800 text-gray-300">Dataset
+                        Gallery</a>
+                </nav>
+            </div>
+        </aside>
+        <main class="flex-1 p-8 overflow-y-auto">
+            <header class="mb-8">
+                <h2 class="text-3xl font-bold text-gray-800">Evaluation Dashboard</h2>
+                <p class="text-gray-500">Thống kê các chỉ số Precision, Recall, F1 và mAP trên tập Corel-1K[cite: 30]
+                </p>
+            </header>
+            <div class="grid grid-cols-4 gap-4 mb-8">
+                <div class="bg-white p-4 rounded-lg shadow-sm border">
+                    <p class="text-sm text-gray-500">Precision@10</p>
+                    <p class="text-2xl font-bold text-indigo-600">62.05%</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm border">
+                    <p class="text-sm text-gray-500">Recall@10</p>
+                    <p class="text-2xl font-bold text-indigo-600">6.21%</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm border">
+                    <p class="text-sm text-gray-500">F1@10</p>
+                    <p class="text-2xl font-bold text-indigo-600">11.29%</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm border">
+                    <p class="text-sm text-gray-500">mAP</p>
+                    <p class="text-2xl font-bold text-indigo-600">0.5487</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border">
+                <h3 class="text-lg font-semibold mb-4 text-gray-700">Bảng tổng hợp chỉ số thực nghiệm</h3>
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b bg-gray-50 text-gray-600 text-sm">
+                            <th class="p-3">Phương pháp</th>
+                            <th class="p-3">Precision@10</th>
+                            <th class="p-3">Recall@10</th>
+                            <th class="p-3">F1@10</th>
+                            <th class="p-3">mAP</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm text-gray-700">
+                        <tr class="border-b">
+                            <td class="p-3 font-medium">Color Histogram</td>
+                            <td class="p-3">0.6205</td>
+                            <td class="p-3">0.0621</td>
+                            <td class="p-3">0.1129</td>
+                            <td class="p-3 font-bold text-indigo-600">0.5487</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-3 font-medium">Color Moments</td>
+                            <td class="p-3">0.5678</td>
+                            <td class="p-3">0.0568</td>
+                            <td class="p-3">0.1033</td>
+                            <td class="p-3">0.4926</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-medium">Local Binary Pattern (LBP)</td>
+                            <td class="p-3">0.5421</td>
+                            <td class="p-3">0.0542</td>
+                            <td class="p-3">0.0986</td>
+                            <td class="p-3">0.4713</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
